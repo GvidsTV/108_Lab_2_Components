@@ -1,15 +1,10 @@
 
-<h1>Hello World!</h1>
-<h2>{{ title }} </h2>
-My name is {{ myName}}
+<app-nav-bar></app-nav-bar>
 
-<input type="text" [(ngModel)]="title" name="title" >
+<!-- inside this tag the content of the pages will be rendered -->
+<router-outlet></router-outlet>
 
-<br>
-<button (click)="something()">Click me!!</button>
+<div>
+    this can be the footer.
+</div>
 
-<hr>
-
-<app-converter></app-converter>
-
-<hr>
